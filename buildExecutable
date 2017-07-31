@@ -1,0 +1,6 @@
+cd /
+cd /Desktop/sample
+docker stop helloworld
+docker rm helloworld
+docker build -t hello-world Desktop/sample
+docker run -d --name helloworld -p 88:88 -v /desktop/sample/src/:/var/www/html hello-world
