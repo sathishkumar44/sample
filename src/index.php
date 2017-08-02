@@ -4,4 +4,7 @@
       echo "sathish";
       echo "jamsheer";
 
+      $version = phpversion();
+      print $version;
+
 ?>
