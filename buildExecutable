@@ -1,6 +1,6 @@
 cd /
-cd /Desktop/sample
+cd /var/www/html/Immidart/sample
 docker stop helloworld
 docker rm helloworld
-docker build -t hello-world Desktop/sample
-docker run -d --name helloworld -p 8888:80 -v /home/sathish/Desktop/sample/src/:/var/www/html hello-world
+docker build -t hello-world /var/www/html/Immidart/sample
+docker run -d --name helloworld -p 8888:80 -v /var/www/html/Immidart/sample/src/:/var/www/html hello-world
